@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MySmsAdvancedActivity">
+
+    <TextView
+        android:id="@+id/txtContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F44336" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message Body:" />
+
+    <EditText
+        android:id="@+id/edtMessageBody"
+        android:layout_width="match_parent"
+        android:layout_height="261dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radSmsMethod1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Method 1" />
+
+        <RadioButton
+            android:id="@+id/radSmsMethod2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Method 2" />
+
+        <RadioButton
+            android:id="@+id/radSmsMethod3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Method 3" />
+
+        <Button
+            android:onClick="doSendMessage"
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEND MESSAGE" />
+
+    </RadioGroup>
+
+</LinearLayout>
